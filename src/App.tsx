@@ -1,13 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MyNavbar from "./components/Navbar";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="text-center">
-      <h1 className="text-3xl font-bold underline text-blue-500">
-        Hello, Tailwind with React + Vite!
-      </h1>
-    </div>
+    <Router>
+      <MyNavbar />
+      <Routes>
+
+
+        
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
-
