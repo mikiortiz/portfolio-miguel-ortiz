@@ -71,16 +71,14 @@ export default function Home() {
 
               {/* Avatar con transparencia */}
               <motion.div className="relative w-64 h-64 md:w-50 md:h-50 rounded-3xl overflow-hidden border-2 border-white">
-  {/* Fondo oscuro y transparente */}
-  <div className="absolute inset-0 bg-black opacity-50" />
-  <img
-    src={avatar}
-    alt="Miguel Ortiz"
-    className="w-full h-full object-cover opacity-80" // Transparencia de la imagen
-  />
-  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-</motion.div>
-
+                <div className="absolute inset-0 bg-black opacity-50" />
+                <img
+                  src={avatar}
+                  alt="Miguel Ortiz"
+                  className="w-full h-full object-cover opacity-80"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+              </motion.div>
             </>
           )}
         </div>

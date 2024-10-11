@@ -7,9 +7,6 @@ function App() {
     <Router>
       <MyNavbar />
       <Routes>
-
-
-        
         <Route path="/" element={<Home />} />
       </Routes>
     </Router>
