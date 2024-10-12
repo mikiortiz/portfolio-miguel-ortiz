@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import video from "../assets/backgraund-5.mp4";
 import avatar from "../assets/foto_perfil.jpg";
 
 export default function Home() {
@@ -16,22 +15,7 @@ export default function Home() {
 
   return (
     <div className="relative flex flex-col min-h-screen overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 left-0 object-cover w-full h-full"
-        style={{ zIndex: -2 }}
-      >
-        <source src={video} type="video/mp4" />
-        Tu navegador no soporta el video.
-      </video>
-
-      <div
-        className="absolute inset-0 bg-black opacity-20"
-        style={{ zIndex: -1 }}
-      ></div>
-
+      {/* Contenido principal, sin el video de fondo */}
       <div className="flex flex-col md:flex-row w-full z-10 p-4 md:p-10 h-full justify-end items-end mt-20">
         <div className="flex flex-col justify-center items-start w-full md:w-1/2 space-y-8 mb-8 md:mb-0 text-white text-center md:text-left">
           {isVisible && (
