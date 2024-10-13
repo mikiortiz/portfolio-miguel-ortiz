@@ -65,14 +65,14 @@ export default function MyNavbar() {
           {buttonOrder.map((button, index) => (
             <NavbarItem key={button.name}>
               <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
+                initial={{ opacity: 0, y: 50, scale: 0.8 }} // Start from the background with smaller size
+                animate={{ opacity: 1, y: 0, scale: 1 }} // Animate to normal size and position
+                exit={{ opacity: 0, y: 50, scale: 0.8 }} // Reverse the animation when exiting
                 transition={{
                   delay: clickedButton === button.name ? 0 : 0.6 * index,
-                  duration: 1.2,
+                  duration: 0.8,
                   type: "spring",
-                  stiffness: 50,
+                  stiffness: 80,
                 }}
               >
                 <motion.div
@@ -106,7 +106,7 @@ export default function MyNavbar() {
                     whileTap={{ scale: 0.95 }}
                     color="primary"
                     variant="bordered"
-                    className="text-white rounded-full font-fredoka px-6 py-3"
+                    className="text-white rounded-full font-fredoka px-6 py-3 flex items-center justify-center"
                     onClick={() => handleNavigate(button.path, button)}
                     style={{
                       backgroundColor:
@@ -116,24 +116,17 @@ export default function MyNavbar() {
                       borderColor: "transparent",
                       borderWidth: "0px",
                       outline: "none",
-                      scale: activeButton?.name === button.name ? 1.1 : 1,
-                      boxShadow:
-                        activeButton?.name === button.name
-                          ? `0px 8px 20px rgba(${parseInt(
-                              button.color.slice(1, 3),
-                              16
-                            )}, ${parseInt(
-                              button.color.slice(3, 5),
-                              16
-                            )}, ${parseInt(button.color.slice(5, 7), 16)}, 0.6)`
-                          : "none",
                       transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                    }}
+                    animate={{
+                      scale:
+                        activeButton?.name === button.name ? [1, 1.05, 1] : 1,
                     }}
                   >
                     <motion.span
                       initial={{ scale: 1 }}
                       animate={{
-                        scale: activeButton?.name === button.name ? 1.1 : 1,
+                        scale: activeButton?.name === button.name ? 1.05 : 1,
                       }}
                       transition={{ duration: 0.3 }}
                       whileTap={{ scale: 1.1 }}
