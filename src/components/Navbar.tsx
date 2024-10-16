@@ -55,7 +55,7 @@ export default function MyNavbar() {
       <Navbar
         shouldHideOnScroll
         maxWidth="full"
-        className="fixed top-0 left-0 w-full bg-white bg-opacity-10 backdrop-blur-lg z-50 px-6 py-3"
+        className="fixed top-0 left-0 w-full bg-black bg-opacity-10 backdrop-blur-lg z-50 px-6 py-3"
         style={{
           borderBottom: `3px solid ${activeButton?.color || "#3B82F6"}`,
           transition: "border-color 0.6s ease-in-out",
@@ -65,9 +65,9 @@ export default function MyNavbar() {
           {buttonOrder.map((button, index) => (
             <NavbarItem key={button.name}>
               <motion.div
-                initial={{ opacity: 0, y: 50, scale: 0.8 }} // Start from the background with smaller size
-                animate={{ opacity: 1, y: 0, scale: 1 }} // Animate to normal size and position
-                exit={{ opacity: 0, y: 50, scale: 0.8 }} // Reverse the animation when exiting
+                initial={{ opacity: 0, y: 50, scale: 0.8 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 50, scale: 0.8 }}
                 transition={{
                   delay: clickedButton === button.name ? 0 : 0.6 * index,
                   duration: 0.8,
@@ -84,7 +84,7 @@ export default function MyNavbar() {
                   }
                   exit={{ y: -100, opacity: 0 }}
                   transition={{
-                    y: { type: "spring", stiffness: 50 },
+                    y: { type: "spring", stiffness: 100 },
                     duration: clickedButton === button.name ? 0.7 : 1.2,
                   }}
                   className="flex flex-col items-center"
@@ -116,7 +116,7 @@ export default function MyNavbar() {
                       borderColor: "transparent",
                       borderWidth: "0px",
                       outline: "none",
-                      transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                      transition: "transform 0.0s ease, box-shadow 0.0s ease",
                     }}
                     animate={{
                       scale:
