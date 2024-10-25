@@ -75,7 +75,7 @@ export default function Projects() {
       {/* Flecha Izquierda */}
       <motion.button
         onClick={navigatePrev}
-        className="absolute left-20 top-[calc(115px)] transform -translate-y-1/2 text-white bg-[#F50057] rounded-full w-12 h-8 flex items-center justify-center"
+        className="absolute left-20 top-[calc(120px)] transform -translate-y-1/2 text-white bg-[#F50057] rounded-full w-12 h-8 flex items-center justify-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
@@ -110,7 +110,7 @@ export default function Projects() {
             initial={isMounted ? "enter" : "center"}
             animate="center"
             exit="exit"
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
             drag="x"
             dragConstraints={{ left: 0, right: 0 }}
             onDragEnd={handleDragEnd}
@@ -140,7 +140,7 @@ export default function Projects() {
       {/* Flecha Derecha */}
       <motion.button
         onClick={navigateNext}
-        className="absolute right-20 top-[calc(115px)] transform -translate-y-1/2 text-white bg-[#F50057] rounded-full w-12 h-8 flex items-center justify-center"
+        className="absolute right-20 top-[calc(120px)] transform -translate-y-1/2 text-white bg-[#F50057] rounded-full w-12 h-8 flex items-center justify-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2 }}
