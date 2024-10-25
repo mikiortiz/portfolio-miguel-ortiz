@@ -22,7 +22,7 @@ export default function Projects() {
 
   const variants = {
     enter: (direction: number) => ({
-      x: direction > 0 ? "100vw" : "-100vw", // Aparece desde fuera de la pantalla, dependiendo de la dirección
+      x: direction > 0 ? "100vw" : "-100vw",
       opacity: 0,
     }),
     center: {
@@ -30,13 +30,13 @@ export default function Projects() {
       opacity: 1,
     },
     exit: (direction: number) => ({
-      x: direction < 0 ? "100vw" : "-100vw", // Desaparece hacia fuera de la pantalla, dependiendo de la dirección
+      x: direction < 0 ? "100vw" : "-100vw",
       opacity: 0,
     }),
   };
 
   const handleDragEnd = (
-    e: any,
+    _: unknown ,
     { offset, velocity }: { offset: { x: number }; velocity: { x: number } }
   ) => {
     const swipe = Math.abs(offset.x) * velocity.x;
@@ -46,14 +46,16 @@ export default function Projects() {
       setIndex((prevIndex) => (prevIndex + 1) % projects.length);
     } else if (swipe > 1000) {
       setDirection(-1);
-      setIndex((prevIndex) => (prevIndex - 1 + projects.length) % projects.length);
+      setIndex(
+        (prevIndex) => (prevIndex - 1 + projects.length) % projects.length
+      );
     }
   };
 
   return (
     <div className="flex items-center justify-center h-screen">
       {/* Contenedor para el motion.div, usando márgenes superiores */}
-      <div className="relative w-full max-w-screen-lg h-[90%] mt-16"> 
+      <div className="relative w-full max-w-screen-lg h-[90%] mt-16">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={projects[index].title}
@@ -73,8 +75,12 @@ export default function Projects() {
             }}
           >
             {/* Contenido del proyecto */}
-            <h2 className="text-white text-4xl font-bold mb-4">{projects[index].title}</h2>
-            <p className="text-white text-lg mb-4">{projects[index].description}</p>
+            <h2 className="text-white text-4xl font-bold mb-4">
+              {projects[index].title}
+            </h2>
+            <p className="text-white text-lg mb-4">
+              {projects[index].description}
+            </p>
 
             {/* Aquí puedes agregar más texto adicional si lo deseas */}
             <div className="text-white text-lg">
