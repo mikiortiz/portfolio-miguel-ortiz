@@ -48,16 +48,16 @@ export default function AboutMe() {
                   className="text-3xl md:text-5xl font-bold pb-2 -mt-3"
                   whileHover={{
                     scale: 1.05,
-                    boxShadow: "0px 10px 10px -5px rgba(59, 130, 246, 0.6)", // Sombra solo en la parte inferior
+                    boxShadow: "0px 10px 10px -5px rgba(59, 130, 246, 0.6)",
                     transition: { duration: 0.3 },
-                  }} // Escalado sutil en el texto
+                  }}
                 >
                   FullStack Developer
                 </motion.h1>
 
                 <motion.p
                   className="text-base md:text-xl"
-                  whileHover={{ scale: 1.01 }} // Escalado sutil en el texto
+                  whileHover={{ scale: 1.01 }}
                 >
                   Con una formación sólida en desarrollo web, soy un profesional
                   resolutivo y proactivo, apasionado por los nuevos retos y
@@ -99,7 +99,7 @@ export default function AboutMe() {
                   className="text-3xl md:text-5xl font-bold pb-2 -mt-3"
                   whileHover={{
                     scale: 1.05,
-                    boxShadow: "0px 10px 10px -5px rgba(59, 130, 246, 0.6)", // Sombra solo en la parte inferior
+                    boxShadow: "0px 10px 10px -5px rgba(59, 130, 246, 0.6)",
                     transition: { duration: 0.3 },
                   }}
                 >
@@ -107,7 +107,7 @@ export default function AboutMe() {
                 </motion.h1>
                 <motion.p
                   className="text-base md:text-xl"
-                  whileHover={{ scale: 1.01 }} // Escalado sutil en el texto
+                  whileHover={{ scale: 1.01 }}
                 >
                   Busco oportunidades para incursionar y prosperar en la
                   dinámica industria de Tecnologías de la Información como
@@ -149,12 +149,12 @@ export default function AboutMe() {
                     className="text-2xl md:text-3xl font-bold text-white"
                     whileHover={{
                       scale: 1.05,
-                      rotateX: 360, // Añadimos la rotación en el eje horizontal
+                      rotateX: 360,
                     }}
                     transition={{
                       type: "spring",
                       stiffness: 50,
-                    }} // Controlamos la transición
+                    }}
                   >
                     Miguel Ortiz
                   </motion.h2>
@@ -164,7 +164,7 @@ export default function AboutMe() {
                       alt="Miguel Ortiz"
                       className="h-24 w-24 md:h-40 md:w-40 object-cover rounded-full border-2 border-blue-600"
                       whileTap={{
-                        rotateX: 360, // Rotación en el eje horizontal al hacer clic
+                        rotateX: 360,
                       }}
                       transition={{
                         type: "spring",
@@ -177,12 +177,12 @@ export default function AboutMe() {
                   <motion.div
                     className="flex items-center"
                     whileHover={{
-                      rotateX: 360, // Rotación en el eje horizontal
+                      rotateX: 360,
                     }}
                     transition={{
                       type: "spring",
                       stiffness: 50,
-                    }} // Controlamos la transición
+                    }}
                   >
                     <img
                       src={emailIcon}
@@ -192,7 +192,7 @@ export default function AboutMe() {
                     <motion.a
                       href="mailto:ortizmichel390@gmail.com"
                       className="text-sm md:text-lg"
-                      whileHover={{ scale: 1.05 }} // Escalado sutil en el texto
+                      whileHover={{ scale: 1.05 }}
                     >
                       ortizmichel390@gmail.com
                     </motion.a>
@@ -200,7 +200,7 @@ export default function AboutMe() {
                   <motion.div
                     className="flex items-center"
                     whileHover={{
-                      rotateX: 360, // Rotación en el eje horizontal
+                      rotateX: 360,
                     }}
                     transition={{
                       type: "spring",
@@ -225,7 +225,7 @@ export default function AboutMe() {
                   <motion.div
                     className="flex items-center"
                     whileHover={{
-                      rotateX: 360, // Rotación en el eje horizontal
+                      rotateX: 360,
                     }}
                     transition={{
                       type: "spring",
@@ -246,7 +246,7 @@ export default function AboutMe() {
                   <motion.div
                     className="flex items-center"
                     whileHover={{
-                      rotateX: 360, // Rotación en el eje horizontal
+                      rotateX: 360,
                     }}
                     transition={{
                       type: "spring",
@@ -271,7 +271,7 @@ export default function AboutMe() {
                   <motion.div
                     className="flex items-center"
                     whileHover={{
-                      rotateX: 360, // Rotación en el eje horizontal
+                      rotateX: 360,
                     }}
                     transition={{
                       type: "spring",
