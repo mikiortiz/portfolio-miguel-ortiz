@@ -7,13 +7,13 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="relative flex flex-col min-h-screen overflow-hidden">
+    <div className="relative flex flex-col min-h-screen">
       {/* Video de fondo */}
       <video
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 object-cover w-full h-full"
+        className="fixed top-0 left-0 object-cover w-full h-full"
         style={{ zIndex: -2 }}
       >
         <source src={video} type="video/mp4" />
@@ -22,12 +22,14 @@ export default function Layout({ children }: LayoutProps) {
 
       {/* Capa semi-transparente */}
       <div
-        className="absolute inset-0 bg-black opacity-20"
+        className="fixed inset-0 bg-black opacity-20"
         style={{ zIndex: -1 }}
       ></div>
 
       {/* Contenido */}
-      <div className="relative z-10">{children}</div>
+      <div className="relative z-10 flex-1">
+        {children}
+      </div>
     </div>
   );
 }
