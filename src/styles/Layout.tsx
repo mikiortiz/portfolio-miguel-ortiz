@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import video from "../assets/backgraund-5.mp4";
+import video from "../assets/backgraund-2.mp4";
 
 interface LayoutProps {
   children: ReactNode;

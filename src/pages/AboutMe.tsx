@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import avatar from "../assets/foto_perfil.jpg";
 import emailIcon from "../assets/Icon-Email.png";
-import phoneIcon from "..//assets/icon-phone.png";
+import phoneIcon from "../assets/icon-phone.png";
 import linkedinIcon from "../assets/icon-linkedin.png";
 import githubIcon from "../assets/icon-github.png";
+import DownloadIcon from "@mui/icons-material/Download";
 
 export default function AboutMe() {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,11 +25,11 @@ export default function AboutMe() {
         <div className="flex flex-col justify-center items-center w-full md:w-1/3 mb-8">
           {isVisible && (
             <motion.div
-              initial={{ opacity: 0, y: -30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 2.2,
-                delay: 1.2,
+                delay: 2.5,
                 type: "spring",
                 stiffness: 100,
               }}
@@ -44,10 +45,25 @@ export default function AboutMe() {
             >
               <div className="flex flex-col items-center h-full justify-between">
                 <div className="flex flex-col items-center mb-2">
-                  <motion.h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+                  <motion.h2
+                    className="text-2xl md:text-4xl font-bold text-white mb-4"
+                    animate={{
+                      y: [0, -5, 0],
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                      ease: "easeInOut",
+                    }}
+                    whileHover={{
+                      scale: 1.05,
+                      transition: { duration: 0.3 },
+                    }}
+                  >
                     Miguel Ortiz
                   </motion.h2>
-                  <div className="flex items-center mb-4">
+                  <div className="flex items-center mb-3">
                     <motion.img
                       src={avatar}
                       alt="Miguel Ortiz"
@@ -55,27 +71,21 @@ export default function AboutMe() {
                     />
                   </div>
                 </div>
-                <div className="flex flex-col items-start text-white space-y-1">
+                <div className="flex flex-col items-start text-white">
                   {/* Email */}
                   <motion.button
-                    animate={{
-                      y: [0, -3, 0],
-                    }}
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{
-                      delay: 1,
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatType: "mirror",
-                      ease: "easeInOut",
+                      delay: 2.7,
+                      duration: 0.8,
+                      type: "spring",
+                      stiffness: 120,
                     }}
-                    className="bg-black bg-opacity-5 rounded-lg px-4 z-10 flex items-center"
+                    className="bg-black bg-opacity-5 rounded-lg z-10 flex items-center"
                     style={{
                       backdropFilter: "blur(10px)",
                       borderColor: "#3B82F6",
-                    }}
-                    whileHover={{
-                      scale: 1.05,
-                      transition: { duration: 0.3 },
                     }}
                     onClick={() =>
                       (window.location.href = "mailto:ortizmichel390@gmail.com")
@@ -93,23 +103,18 @@ export default function AboutMe() {
 
                   {/* LinkedIn */}
                   <motion.button
-                    animate={{
-                      y: [0, -3, 0],
-                    }}
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatType: "mirror",
-                      ease: "easeInOut",
+                      delay: 2.9,
+                      duration: 0.8,
+                      type: "spring",
+                      stiffness: 120,
                     }}
-                    className="bg-black bg-opacity-5 rounded-lg px-4 z-10 flex items-center"
+                    className="bg-black bg-opacity-5 rounded-lg z-10 flex items-center"
                     style={{
                       backdropFilter: "blur(10px)",
                       borderColor: "#3B82F6",
-                    }}
-                    whileHover={{
-                      scale: 1.05,
-                      transition: { duration: 0.3 },
                     }}
                     onClick={() =>
                       window.open(
@@ -128,24 +133,18 @@ export default function AboutMe() {
 
                   {/* GitHub */}
                   <motion.button
-                    animate={{
-                      y: [0, -3, 0],
-                    }}
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{
-                      delay: 1,
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatType: "mirror",
-                      ease: "easeInOut",
+                      delay: 3.2,
+                      duration: 0.8,
+                      type: "spring",
+                      stiffness: 120,
                     }}
-                    className="bg-black bg-opacity-5 rounded-lg px-4 z-10 flex items-center"
+                    className="bg-black bg-opacity-5 rounded-lg z-10 flex items-center"
                     style={{
                       backdropFilter: "blur(10px)",
                       borderColor: "#3B82F6",
-                    }}
-                    whileHover={{
-                      scale: 1.05,
-                      transition: { duration: 0.3 },
                     }}
                     onClick={() =>
                       window.open("https://github.com/MichelSzz", "_blank")
@@ -161,23 +160,18 @@ export default function AboutMe() {
 
                   {/* WhatsApp */}
                   <motion.button
-                    animate={{
-                      y: [0, -3, 0],
-                    }}
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
                     transition={{
-                      duration: 2,
-                      repeat: Infinity,
-                      repeatType: "mirror",
-                      ease: "easeInOut",
+                      delay: 3.5,
+                      duration: 0.8,
+                      type: "spring",
+                      stiffness: 120,
                     }}
-                    className="bg-black bg-opacity-5 rounded-lg px-4 z-10 flex items-center"
+                    className="bg-black bg-opacity-5 rounded-lg z-10 flex items-center"
                     style={{
                       backdropFilter: "blur(10px)",
                       borderColor: "#3B82F6",
-                    }}
-                    whileHover={{
-                      scale: 1.05,
-                      transition: { duration: 0.3 },
                     }}
                     onClick={() =>
                       window.open("https://wa.me/+2622517454", "_blank")
@@ -195,20 +189,20 @@ export default function AboutMe() {
             </motion.div>
           )}
         </div>
-        <div className="flex flex-col w-full md:w-2/3 space-y-1">
+        <div className="flex flex-col w-full md:w-2/3 space-y-1 md:space-y-6">
           {/* Tarjeta de texto 1 */}
           <div className="flex flex-col w-full text-white text-center mb-10">
             {isVisible && (
               <motion.div
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 2.1,
-                  delay: 0.2,
+                  delay: 3.0,
                   type: "spring",
                   stiffness: 100,
                 }}
-                className="bg-black bg-opacity-5 rounded-lg md:p-10 space-y-4 border-2 border-blue-600 z-10"
+                className="md:py-12 bg-black bg-opacity-5 rounded-lg md:p-10 md:space-y-8 space-y-4 border-2 border-blue-600 z-10"
                 style={{
                   backdropFilter: "blur(10px)",
                   borderColor: "#3B82F6",
@@ -219,7 +213,7 @@ export default function AboutMe() {
                 }}
               >
                 <motion.h1
-                  className="text-3xl md:text-4xl font-bold mt-3"
+                  className="text-3xl md:text-4xl font-bold mt-5 md:-mt-3"
                   animate={{
                     y: [0, -5, 0],
                   }}
@@ -251,7 +245,7 @@ export default function AboutMe() {
             )}
           </div>
 
-          {/* tarjeta de texto 2 */}
+          {/* Tarjeta de texto 2 */}
           <div
             className="flex flex-col w-full text-white text-center"
             style={{ height: "48%" }}
@@ -261,16 +255,15 @@ export default function AboutMe() {
                 initial={{ opacity: 0, y: -100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
-                  duration: 3.1,
-                  delay: 0.8,
+                  duration: 2.1,
+                  delay: 3.8,
                   type: "spring",
                   stiffness: 100,
                 }}
-                className="bg-black bg-opacity-5 rounded-lg p-4 md:p-8 space-y-4 border-2 border-blue-600 z-5"
+                className="md:py-12 bg-black bg-opacity-5 rounded-lg md:p-10 md:space-y-8 space-y-4 border-2 border-blue-600 z-10"
                 style={{
                   backdropFilter: "blur(10px)",
                   borderColor: "#3B82F6",
-                  height: "100%",
                 }}
                 whileHover={{
                   boxShadow: "0px 8px 20px 8px rgba(59, 130, 246, 0.6)",
@@ -278,7 +271,7 @@ export default function AboutMe() {
                 }}
               >
                 <motion.h1
-                  className="text-3xl md:text-4xl font-bold"
+                  className="text-3xl md:text-4xl font-bold mt-3 md:-mt-3"
                   animate={{
                     y: [0, -5, 0],
                   }}
@@ -297,19 +290,96 @@ export default function AboutMe() {
                 </motion.h1>
                 <motion.p
                   className="text-base md:text-xl"
-                  whileHover={{ scale: 1.01 }}
+                  whileHover={{ scale: 1.02 }}
                 >
-                  Busco oportunidades para incursionar y prosperar en la
-                  dinámica industria de Tecnologías de la Información como
-                  desarrollador, para crecer profesionalmente, ampliar mis
-                  conocimientos en desarrollo y adquirir aún más experiencia
-                  laboral.
+                  Mi objetivo como FullStack Developer es colaborar en equipos
+                  dinámicos, aplicar soluciones innovadoras en proyectos y
+                  aportar experiencia técnica y creativa en el diseño,
+                  implementación y escalabilidad de productos digitales.
                 </motion.p>
               </motion.div>
             )}
           </div>
         </div>
       </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 3.5 }} // Aseguramos que aparezca al final
+        whileHover={{
+          boxShadow: "0px 8px 20px 8px rgba(59, 130, 246, 0.6)",
+          transition: { duration: 0.0 },
+        }}
+        className="w-full text-center max-w-7xl mx-auto bg-black/10 backdrop-blur-lg p-6 rounded-xl shadow-lg -mt-6 mb-10 border-2 border-blue-600"
+      >
+        <div className="px-6">
+          <h2 className="text-2xl font-semibold text-white mb-4">
+            ¿Qué puedo hacer?
+          </h2>
+
+          {/* Front-End */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 3.7 }} // Pequeño delay extra
+            className="mt-4"
+          >
+            <h3 className="text-xl font-medium text-white">Front-End</h3>
+            <p className="text-gray-200">
+              Como desarrollador frontend, tengo experiencia en el manejo de
+              HTML y CSS, además del manejo de frameworks y librerías,
+              especialmente React JS. He trabajado en proyectos de escala
+              mediana y grande, implementando soluciones eficientes y
+              arquitecturas escalables.
+            </p>
+          </motion.div>
+
+          {/* Back-End */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 3.9 }}
+            className="mt-4"
+          >
+            <h3 className="text-xl font-medium text-white">Back-End</h3>
+            <p className="text-gray-200">
+              Utilizando Express y Node, puedo crear APIs REST seguras,
+              trabajando con bases de datos SQL y NoSQL como PostgreSQL y
+              MongoDB. He trabajado en proyectos medianos y grandes, aplicando
+              buenas prácticas y separación de capas en la arquitectura del
+              software.
+            </p>
+          </motion.div>
+
+          {/* Experiencia */}
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 4.1 }}
+            className="mt-4"
+          >
+            <p className="text-gray-200">
+              He trabajado en desarrollo web, empleando las mejores prácticas,
+              optimizando rendimiento y asegurando código limpio y mantenible.
+            </p>
+          </motion.div>
+
+          {/* Botón para descargar CV */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 4.3 }}
+            className="mt-6 text-center"
+          >
+            <a href="/CV-Miguel Angel Ortiz.pdf" download>
+              <button className="bg-purple-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-purple-700 transition">
+                <DownloadIcon className="inline-block w-5 h-5 mr-2" /> Descargar
+                CV
+              </button>
+            </a>
+          </motion.div>
+        </div>
+      </motion.div>
     </div>
   );
 }

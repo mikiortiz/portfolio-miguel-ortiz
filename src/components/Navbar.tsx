@@ -18,7 +18,7 @@ type ButtonType = {
 const buttons: ButtonType[] = [
   { name: "AboutMe", path: "/", color: "#3B82F6", label: "About Me" },
   { name: "Projects", path: "/projects", color: "#F50057", label: "Projects" },
-  { name: "Skills", path: "/skills", color: "#FF5722", label: "Skills" },
+  { name: "Skills", path: "/skills", color:  "#FF80AB", label: "Skills" },
 ];
 
 export default function MyNavbar() {
@@ -57,8 +57,8 @@ export default function MyNavbar() {
         maxWidth="full"
         className="fixed top-0 left-0 w-full bg-black bg-opacity-10 backdrop-blur-lg z-50 px-6 py-3"
         style={{
-          borderBottom: `3px solid ${activeButton?.color || "#3B82F6"}`,
-          transition: "border-color 0.6s ease-in-out",
+          boxShadow: "0px 4px 12px rgba(255, 255, 255, 0.5)", // Nueva sombra blanca
+          transition: "box-shadow 0.6s ease-in-out", // Transición suave
         }}
       >
         <NavbarContent justify="end" className="flex items-center space-x-6">
@@ -101,6 +101,7 @@ export default function MyNavbar() {
                         button.color.slice(5, 7),
                         16
                       )}, 0.6)`,
+
                       transition: { duration: 0.2 },
                     }}
                     whileTap={{ scale: 0.95 }}
