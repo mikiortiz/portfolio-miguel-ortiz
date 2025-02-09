@@ -39,7 +39,7 @@ export default function MyNavbar() {
       <Navbar
         shouldHideOnScroll
         maxWidth="full"
-        className="fixed top-0 left-0 w-full bg-black bg-opacity-10 backdrop-blur-lg z-50 px-6 py-3"
+        className="fixed top-0 left-0 w-full bg-black bg-opacity-10 backdrop-blur-lg z-50 px-0 py-3"
         style={{
           boxShadow: "0px 4px 12px rgba(255, 255, 255, 0.5)",
           transition: "box-shadow 0.6s ease-in-out, transform 0.6s ease-out",
@@ -48,11 +48,11 @@ export default function MyNavbar() {
       >
         <NavbarContent
           justify="end"
-          className="flex flex-wrap justify-center items-center space-x-4 sm:space-x-6"
+          className="flex justify-center items-center md:space-x-4 sm:space-x-0"
         >
           {buttons.map((button) => (
             <NavbarItem key={button.name}>
-              <div className="flex flex-col items-center">
+              <div className=" items-center">
                 <Button
                   variant="outlined"
                   color="primary"
