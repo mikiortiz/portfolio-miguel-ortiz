@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { Launch, GitHub } from "@mui/icons-material";
 
 interface Project {
   title: string;
@@ -78,14 +79,15 @@ const projects: Project[] = [
       "Yup",
       "Bcrypt",
     ],
-    deployUrl: "URL_DEL_DEPLOY", // Si no tiene, puedes poner "#"
+    deployUrl: "URL_DEL_DEPLOY",
     repoUrl: "https://github.com/mikiortiz/clients-and-numbers--back-end",
   },
   {
-    title: "Adopt-Meow 🐱",
+    title: "Adopt-Meow",
     description:
       "Adopt-Meow es una plataforma diseñada para facilitar la adopción de gatos de manera segura y organizada. Permite gestionar perfiles, ver gatos disponibles y realizar solicitudes de adopción.",
     projectType: "BackEnd",
+    image: "/LogoAdoptMeow.png",
     technologies: [
       "Node.js",
       "Express.js",
@@ -98,7 +100,7 @@ const projects: Project[] = [
       "Morgan",
       "CORS",
     ],
-    deployUrl: "URL_DEL_DEPLOY", // Si no tiene, usa "#"
+    deployUrl: "URL_DEL_DEPLOY",
     repoUrl: "https://github.com/tu-usuario/adopt-meow-backend",
   },
 ];
@@ -260,7 +262,7 @@ export default function Projects() {
                       className="bg-[#F50057] text-white px-4 py-2 rounded-full text-sm "
                       initial={{ scale: 1.5, opacity: 0, y: -20 }}
                       animate={{ scale: 1, opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: idx * 0.8 }}
+                      transition={{ duration: 0.5, delay: idx * 0.3 }}
                     >
                       {tech}
                     </motion.span>
@@ -272,7 +274,7 @@ export default function Projects() {
                 className="flex gap-4 justify-center w-full"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 6 }}
+                transition={{ duration: 1, delay: 2 }}
               >
                 <a
                   href={projects[index].deployUrl}
@@ -280,6 +282,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="text-white bg-[#F50057] px-4 py-2 rounded-md"
                 >
+                  <Launch className="text-white mr-2" />
                   Ir al Deploy
                 </a>
                 <a
@@ -288,6 +291,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="text-white bg-[#F50057] px-4 py-2 rounded-md"
                 >
+                  <GitHub className="text-white mr-2" />
                   Ver Repo en GitHub
                 </a>
               </motion.div>
