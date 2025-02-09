@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Launch, GitHub } from "@mui/icons-material";
 
 interface Project {
   title: string;
@@ -75,12 +76,12 @@ const projects: Project[] = [
       "Yup",
       "Bcrypt",
     ],
-    deployUrl: "URL_DEL_DEPLOY", // Si no tiene, puedes poner "#"
+    deployUrl: "*", // Si no tiene, puedes poner "#"
     repoUrl: "https://github.com/mikiortiz/clients-and-numbers--back-end",
   },
   {
-    title: "Adopt-Meow 🐱",
-    image: "/clients-and-numbers.logo-Photoroom.png",
+    title: "Adopt-Meow ",
+    image: "/LogoAdoptMeow.png",
     description:
       "Adopt-Meow es una plataforma diseñada para facilitar la adopción de gatos de manera segura y organizada. Permite gestionar perfiles, ver gatos disponibles y realizar solicitudes de adopción.",
     projectType: "BackEnd",
@@ -96,7 +97,7 @@ const projects: Project[] = [
       "Morgan",
       "CORS",
     ],
-    deployUrl: "URL_DEL_DEPLOY", // Si no tiene, usa "#"
+    deployUrl: "URL_DEL_DEPLOY",
     repoUrl: "https://github.com/tu-usuario/adopt-meow-backend",
   },
 ];
@@ -203,6 +204,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="text-white bg-[#F50057] px-4 py-2 rounded-md"
                 >
+                  <Launch className="text-white mr-2" />
                   Ir al Deploy
                 </a>
                 <a
@@ -211,6 +213,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="text-white bg-[#F50057] px-4 py-2 rounded-md"
                 >
+                  <GitHub className="text-white mr-2" />
                   Ver Repo en GitHub
                 </a>
               </motion.div>

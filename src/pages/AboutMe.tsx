@@ -22,14 +22,16 @@ export default function AboutMe() {
     <div className="relative flex flex-col min-h-screen overflow-y-auto top-8 md:top-0">
       <div className="flex flex-col md:flex-row w-full z-10 p-4 md:p-10 mt-16 space-y-4 md:space-y-0 md:space-x-10">
         {/* Tarjeta de presentación */}
-        <div className="flex flex-col justify-center items-center w-full md:w-1/3 mb-8">
+        <div className="flex flex-col justify-center items-center w-full md:w-1/3 mb-8 mt-16 md:-mt-1">
+          {" "}
+          {/* Aquí agregué la separación superior (mt-16) */}
           {isVisible && (
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{
                 duration: 2.2,
-                delay: 2.5,
+                delay: 0.5,
                 type: "spring",
                 stiffness: 100,
               }}
@@ -198,7 +200,7 @@ export default function AboutMe() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 2.1,
-                  delay: 3.0,
+                  delay: 1,
                   type: "spring",
                   stiffness: 100,
                 }}
@@ -256,7 +258,7 @@ export default function AboutMe() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                   duration: 2.1,
-                  delay: 3.8,
+                  delay: 1.5,
                   type: "spring",
                   stiffness: 100,
                 }}
@@ -305,17 +307,33 @@ export default function AboutMe() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 3.5 }} // Aseguramos que aparezca al final
+        transition={{ duration: 0.5, delay: 2 }} // Aseguramos que aparezca al final
         whileHover={{
           boxShadow: "0px 8px 20px 8px rgba(59, 130, 246, 0.6)",
           transition: { duration: 0.0 },
         }}
-        className="w-full text-center max-w-7xl mx-auto bg-black/10 backdrop-blur-lg p-6 rounded-xl shadow-lg -mt-6 mb-10 border-2 border-blue-600"
+        className="w-full text-center max-w-7xl mx-auto bg-black/10 backdrop-blur-lg p-6 rounded-xl shadow-lg md:mt-1 mt-8 mb-10 border-2 border-blue-600"
       >
-        <div className="px-6">
-          <h2 className="text-2xl font-semibold text-white mb-4">
+        <div className="px-4">
+          <motion.h1
+            className="text-3xl md:text-4xl font-bold mt-3 md:-mt-3 text-white"
+            animate={{
+              y: [0, -5, 0],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.3 },
+            }}
+          >
+            {" "}
             ¿Qué puedo hacer?
-          </h2>
+          </motion.h1>
 
           {/* Front-End */}
           <motion.div
@@ -325,13 +343,17 @@ export default function AboutMe() {
             className="mt-4"
           >
             <h3 className="text-xl font-medium text-white">Front-End</h3>
-            <p className="text-gray-200">
+            <motion.p
+              className="text-base md:text-xl text-white"
+              whileHover={{ scale: 1.02 }}
+            >
+              {" "}
               Como desarrollador frontend, tengo experiencia en el manejo de
               HTML y CSS, además del manejo de frameworks y librerías,
               especialmente React JS. He trabajado en proyectos de escala
               mediana y grande, implementando soluciones eficientes y
               arquitecturas escalables.
-            </p>
+            </motion.p>
           </motion.div>
 
           {/* Back-End */}
@@ -342,13 +364,17 @@ export default function AboutMe() {
             className="mt-4"
           >
             <h3 className="text-xl font-medium text-white">Back-End</h3>
-            <p className="text-gray-200">
+            <motion.p
+              className="text-base md:text-xl text-white"
+              whileHover={{ scale: 1.02 }}
+            >
+              {" "}
               Utilizando Express y Node, puedo crear APIs REST seguras,
               trabajando con bases de datos SQL y NoSQL como PostgreSQL y
               MongoDB. He trabajado en proyectos medianos y grandes, aplicando
               buenas prácticas y separación de capas en la arquitectura del
               software.
-            </p>
+            </motion.p>
           </motion.div>
 
           {/* Experiencia */}
@@ -358,10 +384,14 @@ export default function AboutMe() {
             transition={{ duration: 0.5, delay: 4.1 }}
             className="mt-4"
           >
-            <p className="text-gray-200">
+            <motion.p
+              className="text-base md:text-xl text-white"
+              whileHover={{ scale: 1.02 }}
+            >
+              {" "}
               He trabajado en desarrollo web, empleando las mejores prácticas,
               optimizando rendimiento y asegurando código limpio y mantenible.
-            </p>
+            </motion.p>
           </motion.div>
 
           {/* Botón para descargar CV */}
