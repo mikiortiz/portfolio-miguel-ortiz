@@ -88,7 +88,7 @@ const Skills = () => {
     >
       <div className="mt-28 bg-black bg-opacity-30 p-8 rounded-3xl shadow-xl backdrop-blur-lg border border-pink-500">
         <div>
-          <h2 className="text-center text-5xl font-bold text-white">Skills</h2>
+          <h2 className="text-center text-4xl font-bold text-white">Skills</h2>
 
           {/* Frontend Skills */}
           <div className="flex items-center mt-6 text-pink-500">
@@ -101,7 +101,7 @@ const Skills = () => {
                   href={skill.url}
                   target="_blank"
                   rel="noopener"
-                  className="text-white opacity-70 hover:opacity-100 text-lg"
+                  className="text-white text-lg transition duration-300 hover:text-gray-300"
                 >
                   {skill.name}
                 </a>
@@ -122,7 +122,7 @@ const Skills = () => {
                   href={skill.url}
                   target="_blank"
                   rel="noopener"
-                  className="text-white opacity-70 hover:opacity-100 text-lg"
+                  className="text-white text-lg transition duration-300 hover:text-gray-300"
                 >
                   {skill.name}
                 </a>
@@ -144,13 +144,14 @@ const Skills = () => {
                   href={skill.url}
                   target="_blank"
                   rel="noopener"
-                  className="text-white opacity-70 hover:opacity-100 text-lg"
+                  className="text-white text-lg transition duration-300 hover:text-gray-300"
                 >
                   {skill.name}
                 </a>
               </div>
             ))}
           </div>
+
           <div className="my-6 border-t-2 border-pink-500" />
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-2">
             {methodologies.map((methodology) => (
@@ -159,7 +160,7 @@ const Skills = () => {
                   href={methodology.url}
                   target="_blank"
                   rel="noopener"
-                  className="text-white opacity-70 hover:opacity-100 text-lg"
+                  className="text-white text-lg transition duration-300 hover:text-gray-300"
                 >
                   {methodology.name}
                 </a>
@@ -169,7 +170,7 @@ const Skills = () => {
 
           <div className="my-6 border-t-2 border-pink-500" />
 
-          <h2 className="text-center text-5xl font-bold text-white">
+          <h2 className="text-center text-4xl font-bold text-white">
             Experiencia
           </h2>
 
@@ -179,7 +180,7 @@ const Skills = () => {
             <Group className="mr-2" /> <h3 className="text-2xl">Experiencia</h3>
           </div>
           <div className="mt-2">
-            <p className="text-white opacity-70 text-lg">
+            <p className="text-white text-lg">
               Conoce más sobre Neurality en{" "}
               <a
                 href="https://www.neurality.tech/es"
@@ -192,13 +193,13 @@ const Skills = () => {
             </p>
           </div>
           {experiences.map((exp, index) => (
-            <p key={index} className="mt-2 text-white opacity-70 text-lg">
+            <p key={index} className="mt-2 text-white text-lg">
               • {exp}
             </p>
           ))}
           <div className="mt-6">
             <h4 className="text-white text-xl">Casi 3 años de Mentoria con:</h4>
-            <p className="text-white opacity-70 text-lg">
+            <p className="text-white text-lg">
               Conéctate con Fernando Gonzalez en{" "}
               <a
                 href={mentorLinkedIn}
