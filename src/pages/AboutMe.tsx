@@ -120,7 +120,7 @@ export default function AboutMe() {
                     }}
                     onClick={() =>
                       window.open(
-                        "https://www.linkedin.com/in/miguel-ortiz-7b3494266/",
+                        "https://www.linkedin.com/in/miguel-ortiz-9736b32a5/",
                         "_blank"
                       )
                     }
@@ -149,7 +149,7 @@ export default function AboutMe() {
                       borderColor: "#3B82F6",
                     }}
                     onClick={() =>
-                      window.open("https://github.com/MichelSzz", "_blank")
+                      window.open("https://github.com/mikiortiz", "_blank")
                     }
                   >
                     <img
@@ -176,7 +176,13 @@ export default function AboutMe() {
                       borderColor: "#3B82F6",
                     }}
                     onClick={() =>
-                      window.open("https://wa.me/+2622517454", "_blank")
+                      window.open(
+                        "https://wa.me/+2622517454?text=" +
+                          encodeURIComponent(
+                            "¡Hola! Soy Miguel Ortiz, un apasionado Full Stack Developer. 🚀 Si tienes una idea, un proyecto o simplemente quieres hablar de tecnología, mándame un mensaje. ¡Estoy listo para ayudarte!"
+                          ),
+                        "_blank"
+                      )
                     }
                   >
                     <img
@@ -307,7 +313,7 @@ export default function AboutMe() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 2 }} // Aseguramos que aparezca al final
+        transition={{ duration: 0.5, delay: 2 }}
         whileHover={{
           boxShadow: "0px 8px 20px 8px rgba(59, 130, 246, 0.6)",
           transition: { duration: 0.0 },
