@@ -280,7 +280,7 @@ export default function AboutMe() {
             type: "spring",
             stiffness: 100,
           }}
-          className="md:py-12 bg-black bg-opacity-5 rounded-lg md:p-10 md:space-y-8 space-y-4 border-2 border-blue-600 z-10 max-w-7xl shadow-lg mt-10 mb-10 px-4"
+          className="md:py-12 bg-black bg-opacity-5 rounded-lg md:p-10 md:space-y-8 space-y-4 border-2 border-blue-600 z-10 w-full shadow-lg mt-10 mb-10 px-4"
           style={{
             backdropFilter: "blur(10px)",
             borderColor: "#3B82F6",

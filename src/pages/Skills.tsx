@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Code, Group } from "@mui/icons-material";
+import { Build } from "@mui/icons-material";
+import Work from "@mui/icons-material/Work";
 
 const skills = [
   { name: "HTML", url: "https://developer.mozilla.org/en-US/docs/Web/HTML" },
@@ -21,8 +23,8 @@ const skills = [
   { name: "Formik", url: "https://formik.org/" },
   { name: "Yup", url: "https://www.npmjs.com/package/yup" },
   { name: "Google OAuth", url: "https://developers.google.com/identity" },
-  { name: "Spline", url: "https://spline.design/" }, // Nueva habilidad agregada
-  { name: "Unity", url: "https://unity.com/" }, // Nueva habilidad agregada
+  { name: "Spline", url: "https://spline.design/" },
+  { name: "Unity", url: "https://unity.com/" },
 ];
 
 const backendSkills = [
@@ -88,7 +90,13 @@ const Skills = () => {
     >
       <div className="mt-28 bg-black bg-opacity-30 p-8 rounded-3xl shadow-xl backdrop-blur-lg border border-pink-500">
         <div>
-          <h2 className="text-center text-4xl font-bold text-white">Skills</h2>
+          <div className="flex items-center justify-center">
+            {/* Icono de herramientas junto al título "Skills" */}
+            <h2 className="text-center text-4xl font-bold text-white">
+              Skills
+            </h2>
+            <Build className="ml-3 text-white" sx={{ fontSize: 30 }} />
+          </div>
 
           {/* Frontend Skills */}
           <div className="flex items-center mt-6 text-pink-500">
@@ -108,9 +116,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
-
           <div className="my-6 border-t-2 border-pink-500" />
-
           {/* Backend Skills */}
           <div className="flex items-center mt-6 text-pink-500">
             <Code className="mr-2" /> <h3 className="text-2xl">Backend</h3>
@@ -129,9 +135,7 @@ const Skills = () => {
               </div>
             ))}
           </div>
-
           <div className="my-6 border-t-2 border-pink-500" />
-
           {/* DevOps and Methodologies */}
           <div className="flex items-center mt-6 text-pink-500">
             <Code className="mr-2" />{" "}
@@ -151,7 +155,6 @@ const Skills = () => {
               </div>
             ))}
           </div>
-
           <div className="my-6 border-t-2 border-pink-500" />
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-2">
             {methodologies.map((methodology) => (
@@ -167,18 +170,60 @@ const Skills = () => {
               </div>
             ))}
           </div>
+          <div className="my-6 border-t-2 border-pink-500" />
+          {/* Soft Skills */}
+          <div className="my-6">
+            <div className="flex items-center mt-6 text-pink-500">
+              <Group className="mr-2" />{" "}
+              <h3 className="text-2xl">Soft Skills</h3>
+            </div>
+            <div className="mt-4">
+              <div className="space-y-4 text-white">
+                <div className="text-lg">
+                  <strong> Comunicación efectiva 🗣️</strong> – Expreso ideas
+                  técnicas de manera clara y comprensible, adaptándome al
+                  público objetivo, ya sean desarrolladores, clientes o equipos
+                  de otras áreas.
+                </div>
+                <div className="text-lg">
+                  <strong> Trabajo en equipo 🤝</strong> – Colaboro activamente
+                  en entornos ágiles, aportando soluciones y aprendiendo de mis
+                  compañeros para mejorar continuamente.
+                </div>
+                <div className="text-lg">
+                  <strong> Autodidacta y proactivo 📚</strong> – Me esfuerzo por
+                  mantenerme actualizado con nuevas tecnologías y mejorar mis
+                  habilidades mediante la práctica y el aprendizaje constante.
+                </div>
+                <div className="text-lg">
+                  <strong> Gestión del tiempo y organización ⏰</strong> –
+                  Priorizo tareas de manera eficiente para cumplir con plazos y
+                  optimizar el flujo de trabajo.
+                </div>
+                <div className="text-lg">
+                  <strong> Resolución de problemas 🧠</strong> – Enfrento
+                  desafíos con un enfoque analítico, buscando soluciones
+                  efectivas y aprendiendo de cada experiencia.
+                </div>
+                <div className="text-lg">
+                  <strong> Adaptabilidad 🔄</strong> – Me ajusto a cambios en
+                  los proyectos y metodologías de trabajo, manteniendo una
+                  actitud abierta a nuevas formas de hacer las cosas.
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="my-6 border-t-2 border-pink-500" />
 
           <h2 className="text-center text-4xl font-bold text-white">
-            Experiencia
+            Experiencia <Work className="mr-2" sx={{ fontSize: 40 }} />
           </h2>
-
-          {/* Experiencia */}
 
           <div className="flex items-center text-pink-500">
             <Group className="mr-2" /> <h3 className="text-2xl">Experiencia</h3>
           </div>
+
           <div className="mt-2">
             <p className="text-white text-lg">
               Conoce más sobre Neurality en{" "}
@@ -212,28 +257,26 @@ const Skills = () => {
               para conseguir recomendación.
             </p>
           </div>
-
           {/* diploma */}
           <div className="mt-6">
             <img
               src="/Diploma quintoImpacto.jpeg"
               alt="Diploma"
-              className="w-64 mx-auto mt-2 rounded-md cursor-pointer"
+              className="w-64 m-auto mt-2 rounded-md cursor-pointer"
               onClick={() => openModal("/Diploma quintoImpacto.jpeg")}
             />
           </div>
         </div>
       </div>
-
       {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-70 z-50"
           onClick={closeModal}
         >
           <img
+            className="fixed inset-x-0 -bottom-24 z-50 p-38"
             src={imageSrc}
             alt="Diploma"
-            className="max-w-full max-h-full object-contain"
           />
         </div>
       )}
