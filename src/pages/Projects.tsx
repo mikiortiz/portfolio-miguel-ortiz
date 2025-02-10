@@ -269,30 +269,31 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-
               <motion.div
                 className="flex gap-4 justify-center w-full"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 2 }}
               >
-                <a
-                  href={projects[index].deployUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white bg-[#F50057] px-4 py-2 rounded-md"
-                >
-                  <Launch className="text-white mr-2" />
-                  Ir al Deploy
-                </a>
+                {projects[index].projectType !== "BackEnd" && (
+                  <a
+                    href={projects[index].deployUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white bg-[#F50057] px-4 py-2 rounded-md w-48"
+                  >
+                    <Launch className="text-white mr-2" />
+                    Deploy
+                  </a>
+                )}
                 <a
                   href={projects[index].repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white bg-[#F50057] px-4 py-2 rounded-md"
+                  className="text-white bg-[#F50057] px-4 py-2 rounded-md w-48"
                 >
                   <GitHub className="text-white mr-2" />
-                  Ver Repo en GitHub
+                  GitHub
                 </a>
               </motion.div>
             </div>
