@@ -76,7 +76,7 @@ const projects: Project[] = [
       "Yup",
       "Bcrypt",
     ],
-    deployUrl: "*", // Si no tiene, puedes poner "#"
+    deployUrl: "*",
     repoUrl: "https://github.com/mikiortiz/clients-and-numbers--back-end",
   },
   {
@@ -97,8 +97,8 @@ const projects: Project[] = [
       "Morgan",
       "CORS",
     ],
-    deployUrl: "URL_DEL_DEPLOY",
-    repoUrl: "https://github.com/tu-usuario/adopt-meow-backend",
+    deployUrl: "*",
+    repoUrl: "https://github.com/mikiortiz/adopt-meow-Back-Emd",
   },
 ];
 
@@ -110,7 +110,7 @@ export default function Projects() {
           <motion.div
             key={project.title}
             className="bg-black bg-opacity-40 backdrop-blur-md rounded-lg p-6 flex flex-col md:flex-row justify-between border border-2 border-[#F50057] overflow-hidden"
-            initial={{ opacity: 1 }} // Mantiene la tarjeta visible
+            initial={{ opacity: 1 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true, amount: 0.5 }}
           >
