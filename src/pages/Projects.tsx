@@ -79,7 +79,7 @@ const projects: Project[] = [
       "Yup",
       "Bcrypt",
     ],
-    deployUrl: "URL_DEL_DEPLOY",
+    deployUrl: "*",
     repoUrl: "https://github.com/mikiortiz/clients-and-numbers--back-end",
   },
   {
@@ -100,8 +100,8 @@ const projects: Project[] = [
       "Morgan",
       "CORS",
     ],
-    deployUrl: "URL_DEL_DEPLOY",
-    repoUrl: "https://github.com/tu-usuario/adopt-meow-backend",
+    deployUrl: "*",
+    repoUrl: "https://github.com/mikiortiz/adopt-meow-Back-Emd",
   },
 ];
 
