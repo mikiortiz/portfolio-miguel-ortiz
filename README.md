@@ -77,9 +77,5 @@ Mentoría a estudiantes interesados en el desarrollo web y las tecnologías emer
   </a>
 </p>
 
-
-
-[LinkedIn - Miguel Ortiz ](https://www.linkedin.com/in/miguel-ortiz-9736b32a5/)
-
 ---
 
