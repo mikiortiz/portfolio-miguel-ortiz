@@ -27,10 +27,10 @@ En esta sección encontrarás una breve descripción de quién soy y mi camino e
 
 Aquí te muestro algunos de los proyectos que he desarrollado. Cada proyecto incluye:
 
-✅ **Título del proyecto**  
-✅ **Imagen o logo**  
-✅ **Tecnologías utilizadas**  
-✅ **Enlaces al repositorio y deploy (si está disponible)**  
+-✅ **Título del proyecto**  
+-✅ **Imagen o logo**  
+-✅ **Tecnologías utilizadas**  
+-✅ **Enlaces al repositorio y deploy (si está disponible)**  
 
 ## Habilidades
 
