@@ -72,8 +72,8 @@ Mentoría a estudiantes interesados en el desarrollo web y las tecnologías emer
   <a href="https://www.linkedin.com/in/miguel-ortiz-9736b32a5/" target="_blank">
     <img src="https://img.shields.io/badge/💼%20LinkedIn-blue?style=for-the-badge" alt="LinkedIn">
   </a>
-  <a href="https://github.com/mikiortiz/portfolio-miguel-ortiz" target="_blank">
-    <img src="https://img.shields.io/badge/🐙%20GitHub-black?style=for-the-badge" alt="GitHub">
+  <a href="https://portfolio-miguelortiz.netlify.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🐙%20Deploy-black?style=for-the-badge" alt="GitHub">
   </a>
 </p>
 
