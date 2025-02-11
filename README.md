@@ -44,12 +44,12 @@ Aquí te muestro algunos de los proyectos que he desarrollado. Cada proyecto inc
 - GIT / GITHUB, HEROKU, NETLIFY, RAILWAY, VERCEL, SCRUM, TRELLO, GITHUB FLOW.
 
 ### 💡 Soft Skills
-✅**Comunicación efectiva 🗣️** – Expreso ideas técnicas de manera clara y comprensible, adaptándome al público objetivo, ya sean desarrolladores, clientes o equipos de otras áreas.
-✅**Trabajo en equipo 🤝** – Colaboro activamente en entornos ágiles, aportando soluciones y aprendiendo de mis compañeros para mejorar continuamente.
-✅**Autodidacta y proactivo 📚** – Me esfuerzo por mantenerme actualizado con nuevas tecnologías y mejorar mis habilidades mediante la práctica y el aprendizaje constante.
-✅**Gestión del tiempo y organización ⏰** – Priorizo tareas de manera eficiente para cumplir con plazos y optimizar el flujo de trabajo.
-✅**Resolución de problemas 🧠** – Enfrento desafíos con un enfoque analítico, buscando soluciones efectivas y aprendiendo de cada experiencia.
-✅**Adaptabilidad 🔄** – Me ajusto a cambios en los proyectos y metodologías de trabajo, manteniendo una actitud abierta a nuevas formas de hacer las cosas.
+**✅Comunicación efectiva 🗣️** – Expreso ideas técnicas de manera clara y comprensible, adaptándome al público objetivo, ya sean desarrolladores, clientes o equipos de otras áreas.
+**✅Trabajo en equipo 🤝** – Colaboro activamente en entornos ágiles, aportando soluciones y aprendiendo de mis compañeros para mejorar continuamente.
+**✅Autodidacta y proactivo 📚** – Me esfuerzo por mantenerme actualizado con nuevas tecnologías y mejorar mis habilidades mediante la práctica y el aprendizaje constante.
+**✅Gestión del tiempo y organización ⏰** – Priorizo tareas de manera eficiente para cumplir con plazos y optimizar el flujo de trabajo.
+**✅Resolución de problemas 🧠** – Enfrento desafíos con un enfoque analítico, buscando soluciones efectivas y aprendiendo de cada experiencia.
+**✅Adaptabilidad 🔄** – Me ajusto a cambios en los proyectos y metodologías de trabajo, manteniendo una actitud abierta a nuevas formas de hacer las cosas.
 
 ## Experiencia
 
