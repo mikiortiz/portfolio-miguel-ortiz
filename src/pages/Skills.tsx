@@ -273,7 +273,7 @@ const Skills = () => {
             <h4 className="text-white text-xl">(2024-2025):</h4>
             <p className="text-white text-lg">
               <span className="font-semibold">
-                [ Lucca Ferreira ]-[ Gestor de Proyectos y Equipos ]
+                [ Lucca Ferreyra ]-[ Gestor de Proyectos y Equipos ]
               </span>
               Además tuve la oportunidad de aprender y crecer Junto a quien fue
               mi PM en Quinto Impacto. Con él, fortalecí y desarrollé
