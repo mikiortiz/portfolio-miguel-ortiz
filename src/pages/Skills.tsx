@@ -244,18 +244,19 @@ const Skills = () => {
             </p>
           ))}
           <div className="mt-6">
-            <h4 className="text-white text-xl">Casi 3 años de mentoría:</h4>
+            <h4 className="text-white text-xl">Casi 3 años de mentoría: </h4>
             <p className="text-white text-lg">
-              He tenido el privilegio de contar con la
-              mentoría de{" "}
-              <span className="font-semibold">Fernando González</span>. Más que
-              un mentor, Fernando se convirtió en un referente clave en mi
-              desarrollo profesional y un consejero invaluable en mi crecimiento
-              personal. Su guía no solo me ayudó a perfeccionar mis habilidades
-              técnicas, sino que también me enseñó la importancia de la
-              resiliencia, el pensamiento estratégico y el liderazgo. Su apoyo
-              ha sido fundamental para mi evolución tanto en el ámbito
-              profesional como en la vida. Conéctate con Fernando en{" "}
+              <span className="font-semibold">
+                [ Fernando González ]-[ Software Lead Ingenier ]{" "}
+              </span>
+              He tenido el privilegio de contar con la mentoría de este
+              profesional. Más que un mentor, Fernando se convirtió en un
+              referente clave en mi desarrollo profesional y un consejero
+              invaluable en mi crecimiento personal. Su guía no solo me ayudó a
+              perfeccionar mis habilidades técnicas, sino que también me enseñó
+              la importancia de la resiliencia, el pensamiento estratégico y el
+              liderazgo. Su apoyo ha sido fundamental para mi evolución tanto en
+              el ámbito profesional como en la vida. Conéctate con Fernando en{" "}
               <a
                 href={FernandoLinkedIn}
                 target="_blank"
@@ -271,8 +272,10 @@ const Skills = () => {
           <div className="mt-6">
             <h4 className="text-white text-xl">(2024-2025):</h4>
             <p className="text-white text-lg">
-              Además tuve la oportunidad de aprender y crecer Junto a{" "}
-              <span className="font-semibold">Lucca Ferreira</span>, quien fue
+              <span className="font-semibold">
+                [ Lucca Ferreira ]-[ Gestor de Proyectos y Equipos ]
+              </span>
+              Además tuve la oportunidad de aprender y crecer Junto a quien fue
               mi PM en Quinto Impacto. Con él, fortalecí y desarrollé
               habilidades clave en <span className="italic">Soft Skills</span>,
               como comunicación efectiva, liderazgo y trabajo en equipo.
