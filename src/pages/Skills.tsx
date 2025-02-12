@@ -65,7 +65,8 @@ const experiences = [
   "Desarrollo de Aplicaciones Web - Mentoría por Software Lead Engineer (2022)",
 ];
 
-const mentorLinkedIn = "https://www.linkedin.com/in/fernando-a-gonzalez/";
+const FernandoLinkedIn = "https://www.linkedin.com/in/fernando-a-gonzalez/";
+const LuccaLinkedIn = "https://www.linkedin.com/in/luccaferreyra12/";
 
 const Skills = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -243,20 +244,51 @@ const Skills = () => {
             </p>
           ))}
           <div className="mt-6">
-            <h4 className="text-white text-xl">Casi 3 años de Mentoria con:</h4>
+            <h4 className="text-white text-xl">Casi 3 años de mentoría:</h4>
             <p className="text-white text-lg">
-              Conéctate con Fernando Gonzalez en{" "}
+              He tenido el privilegio de contar con la
+              mentoría de{" "}
+              <span className="font-semibold">Fernando González</span>. Más que
+              un mentor, Fernando se convirtió en un referente clave en mi
+              desarrollo profesional y un consejero invaluable en mi crecimiento
+              personal. Su guía no solo me ayudó a perfeccionar mis habilidades
+              técnicas, sino que también me enseñó la importancia de la
+              resiliencia, el pensamiento estratégico y el liderazgo. Su apoyo
+              ha sido fundamental para mi evolución tanto en el ámbito
+              profesional como en la vida. Conéctate con Fernando en{" "}
               <a
-                href={mentorLinkedIn}
+                href={FernandoLinkedIn}
                 target="_blank"
                 rel="noopener"
                 className="text-pink-500 hover:text-pink-700"
               >
                 LinkedIn
               </a>{" "}
-              para conseguir recomendación.
+              para conocer más sobre su trayectoria y experiencia.
             </p>
           </div>
+
+          <div className="mt-6">
+            <h4 className="text-white text-xl">(2024-2025):</h4>
+            <p className="text-white text-lg">
+              Además tuve la oportunidad de aprender y crecer Junto a{" "}
+              <span className="font-semibold">Lucca Ferreira</span>, quien fue
+              mi PM en Quinto Impacto. Con él, fortalecí y desarrollé
+              habilidades clave en <span className="italic">Soft Skills</span>,
+              como comunicación efectiva, liderazgo y trabajo en equipo.
+              Conéctate con Lucca en{" "}
+              <a
+                href={LuccaLinkedIn}
+                target="_blank"
+                rel="noopener"
+                className="text-pink-500 hover:text-pink-700"
+              >
+                LinkedIn
+              </a>{" "}
+              para conocer más sobre su trayectoria y experiencia.
+            </p>
+          </div>
+
           {/* diploma */}
           <div className="mt-6">
             <img
